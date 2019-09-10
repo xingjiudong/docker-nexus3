@@ -1,11 +1,11 @@
-FROM sonatype/nexus3:3.14.0
+FROM sonatype/nexus3:3.15.2
 
 MAINTAINER "xing.jiudong@trans-cosmos.com.cn"
 
 USER root
 
 ENV APT_PLUGIN_VERSION 1.0.8
-ENV NEXUS_VERSION 3.14.0-04
+ENV NEXUS_VERSION 3.15.2-01
 
 ENV CONF /opt/sonatype/nexus/system/org/sonatype/nexus/assemblies/nexus-core-feature/${NEXUS_VERSION}/nexus-core-feature-${NEXUS_VERSION}-features.xml
 ENV PLUGIN_PATH ${NEXUS_HOME}/system/net/staticsnow/nexus-repository-apt/${APT_PLUGIN_VERSION}
